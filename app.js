@@ -6,7 +6,9 @@ const removeImages = document.getElementById('removeImages');
 
 function createGiphy(giphy) {
     const newCol = document.createElement('div');
-    newCol.classList.add('col-4');
+    newCol.classList.add('col-12');
+    newCol.classList.add('col-sm-6');
+    newCol.classList.add('col-md-4');
     const newGiphy = document.createElement('img');
     const randomIdx = Math.floor(Math.random()*giphy.data.data.length);
     newGiphy.classList.add('w-100');
